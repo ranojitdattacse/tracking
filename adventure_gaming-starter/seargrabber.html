@@ -1,0 +1,29 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Term Grabber</title>
+<script>
+const searchForm = document.getElementById("searchForm");
+const searchTermInput = document.getElementById("searchTerm");
+ 
+searchForm.addEventListener("submit", (event) => {
+  // Prevent default form submission behavior
+  event.preventDefault();
+ 
+  // Get the search term from the input field
+  const searchTerm = searchTermInput.value;
+ 
+  // Print the search term to the console
+  console.log("Search term:", searchTerm);
+});
+</script>
+</head>
+<body>
+    <form id="searchForm">
+        <input type="text" id="searchTerm" placeholder="Enter search term">
+        <button type="submit">Search</button>
+      </form>
+  </form>
+</body>
+</html>
